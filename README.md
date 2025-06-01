@@ -12,7 +12,7 @@ Bansal, A., Borgnia, E., Chu, H., Li, J.S., Kazemi, H., Huang, F., Goldblum, M.,
 ## Youtube Video
 Here is a short video showcasing the visualizations of the examples below:
 <br>
-LINK GOES HERE WHEN READY
+[Cold Diffusion Variant Models](https://youtu.be/JdRaWuKZdo8)
 
 ## Variant Models
 - **Recolor**: Designed to recolor grayscaled images.
