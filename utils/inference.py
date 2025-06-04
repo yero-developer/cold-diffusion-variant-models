@@ -133,6 +133,7 @@ def inferencing(model, test_loader, model_name_file, timesteps, beta_schedule, i
         for img1, img2, img5, img3, img4 in zip(recolored_image_list, pred_noise_list, reconstructed_image, original_grayscaled_image, original_color_image)
     ]
 
+    os.makedirs("models_epoch_inferences", exist_ok=True)
     for idx, frame in enumerate(combined_frames):
         img = Image.fromarray(frame)
         if idx == 0:
@@ -162,7 +163,6 @@ def inferencing(model, test_loader, model_name_file, timesteps, beta_schedule, i
         blit=True,
     )
 
-    os.makedirs("models_epoch_inferences", exist_ok=True)
     ani.save(f'models_epoch_inferences/{model_name_file}.mp4', fps=24, writer="ffmpeg")
     ani.save(f'models_epoch_inferences/{model_name_file}.gif', fps=24, writer="pillow")
     plt.close()
